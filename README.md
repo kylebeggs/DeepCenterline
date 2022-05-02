@@ -2,8 +2,8 @@
 
 Model for finding a centerline distance map of blood vessel segmentations to then be fed into a graph minimum path extractor to find the centerlines of a vessel using PyTorch. It uses a Residual UNet (Convolutional AutoEncoder) type architecture.
 
-The [train.py](train.py) file in the main directory of the repo is the only file of importance. There is a helper file with some plotting functions,
-etc named [helper.py](helper.py) but everything is contained in the train file.
+The [train.py](src/train.py) file in the src directory and the models are defined in [models.py](src/models.py). There is a helper file with some plotting functions,
+etc named [utils.py](src/utils.py).
 
 We make use of argparse here, so simply type ``` python train.py --help ``` to see the potential training settings as such:
 
