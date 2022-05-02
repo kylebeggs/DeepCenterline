@@ -1,0 +1,165 @@
+
+@inproceedings{antigaCenterlineComputationGeometric2003,
+  title = {Centerline {{Computation}} and {{Geometric Analysis}} of {{Branching Tubular Surfaces With Application}} to {{Blood Vessel Modeling}}},
+  author = {Antiga, Luca and {Ene-Iordache}, Bogdan and Remuzzi, Andrea},
+  year = {2003},
+  month = feb,
+  abstract = {In this work we present a robust and accurate method for the computation of centerlines inside branching tubular objects starting from a piecewise linear representation of their boundary. The algorithm is based on solving the Eikonal equation on the Voronoi diagram embedded into the object, with wavefront speed inversely proportional to Voronoi ball radius values. As a result, provably accurate centerlines and maximal inscribed ball radius values along them are provided. In the same framework, a method for local surface characterization is also developed, allowing robust computation of the distance of surface points to centerlines and disclosing the relationship of surface points with centerlines. A new surface-based quantity is finally proposed, the normalized tangency deviation, which provides a scale-invariant criterion for surface characterization. The developed methods are applied to 3D models of vascular segments in the context of patient-specific anatomical characterization.},
+  file = {/Users/kylebeggs/Zotero/storage/LGJJNHCG/Antiga et al. - 2003 - Centerline Computation and Geometric Analysis of B.pdf}
+}
+
+@article{guoDeepCenterlineMultitaskFully2019,
+  title = {{{DeepCenterline}}: A {{Multi-task Fully Convolutional Network}} for {{Centerline Extraction}}},
+  shorttitle = {{{DeepCenterline}}},
+  author = {Guo, Zhihui and Bai, Junjie and Lu, Yi and Wang, Xin and Cao, Kunlin and Song, Qi and Sonka, Milan and Yin, Youbing},
+  year = {2019},
+  month = mar,
+  abstract = {A novel centerline extraction framework is reported which combines an end-to-end trainable multi-task fully convolutional network (FCN) with a minimal path extractor. The FCN simultaneously computes centerline distance maps and detects branch endpoints. The method generates single-pixel-wide centerlines with no spurious branches. It handles arbitrary tree-structured object with no prior assumption regarding depth of the tree or its bifurcation pattern. It is also robust to substantial scale changes across different parts of the target object and minor imperfections of the object's segmentation mask. To the best of our knowledge, this is the first deep-learning based centerline extraction method that guarantees single-pixel-wide centerline for a complex tree-structured object. The proposed method is validated in coronary artery centerline extraction on a dataset of 620 patients (400 of which used as test set). This application is challenging due to the large number of coronary branches, branch tortuosity, and large variations in length, thickness, shape, etc. The proposed method generates well-positioned centerlines, exhibiting lower number of missing branches and is more robust in the presence of minor imperfections of the object segmentation mask. Compared to a state-of-the-art traditional minimal path approach, our method improves patient-level success rate of centerline extraction from 54.3\% to 88.8\% according to independent human expert review.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/RJTKGXEM/Guo et al. - 2019 - DeepCenterline a Multi-task Fully Convolutional N.pdf;/Users/kylebeggs/Zotero/storage/5QURK8VT/1903.html}
+}
+
+@article{jinRobustEfficientCurve2016,
+  title = {A {{Robust}} and {{Efficient Curve Skeletonization Algorithm}} for {{Tree-Like Objects Using Minimum Cost Paths}}},
+  author = {Jin, Dakai and Iyer, Krishna S and Chen, Cheng and Hoffman, Eric A and Saha, Punam K},
+  year = {2016},
+  month = jun,
+  journal = {Pattern recognition letters},
+  volume = {76},
+  pages = {32--40},
+  issn = {0167-8655},
+  doi = {10.1016/j.patrec.2015.04.002},
+  abstract = {Conventional curve skeletonization algorithms using the principle of Blum's transform, often, produce unwanted spurious branches due to boundary irregularities, digital effects, and other artifacts. This paper presents a new robust and efficient curve skeletonization algorithm for three-dimensional (3-D) elongated fuzzy objects using a minimum cost path approach, which avoids spurious branches without requiring post-pruning. Starting from a root voxel, the method iteratively expands the skeleton by adding new branches in each iteration that connects the farthest quench voxel to the current skeleton using a minimum cost path. The path-cost function is formulated using a novel measure of local significance factor defined by the fuzzy distance transform field, which forces the path to stick to the centerline of an object. The algorithm terminates when dilated skeletal branches fill the entire object volume or the current farthest quench voxel fails to generate a meaningful skeletal branch. Accuracy of the algorithm has been evaluated using computer-generated phantoms with known skeletons. Performance of the method in terms of false and missing skeletal branches, as defined by human experts, has been examined using in vivo CT imaging of human intrathoracic airways. Results from both experiments have established the superiority of the new method as compared to the existing methods in terms of accuracy as well as robustness in detecting true and false skeletal branches. The new algorithm makes a significant reduction in computation complexity by enabling detection of multiple new skeletal branches in one iteration. Specifically, this algorithm reduces the number of iterations from the number of terminal tree branches to the worst case performance of tree depth. In fact, experimental results suggest that, on an average, the order of computation complexity is reduced to the logarithm of the number of terminal branches of a tree-like object.},
+  pmcid = {PMC4860741},
+  pmid = {27175043},
+  file = {/Users/kylebeggs/Zotero/storage/4CYMNWAZ/Jin et al. - 2016 - A Robust and Efficient Curve Skeletonization Algor.pdf}
+}
+
+@inproceedings{lengaDeepLearningBased2019,
+  title = {Deep {{Learning Based Rib Centerline Extraction}} and {{Labeling}}},
+  booktitle = {Computational {{Methods}} and {{Clinical Applications}} in {{Musculoskeletal Imaging}}},
+  author = {Lenga, Matthias and Klinder, Tobias and B{\"u}rger, Christian and {von Berg}, Jens and Franz, Astrid and Lorenz, Cristian},
+  editor = {Vrtovec, Toma{\v z} and Yao, Jianhua and Zheng, Guoyan and Pozo, Jose M.},
+  year = {2019},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {99--113},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-11166-3_9},
+  abstract = {Automated extraction and labeling of rib centerlines is a typically needed prerequisite for more advanced assisted reading tools that help the radiologist to efficiently inspect all 24 ribs in a computed tomography (CT) volume. In this paper, we combine a deep learning-based rib detection with a dedicated centerline extraction algorithm applied to the detection result for the purpose of fast, robust and accurate rib centerline extraction and labeling from CT volumes. More specifically, we first apply a fully convolutional neural network to generate a probability map for detecting the first rib pair, the twelfth rib pair, and the collection of all intermediate ribs. In a second stage, a newly designed centerline extraction algorithm is applied to this multi-label probability map. Finally, the distinct detection of first and twelfth rib separately, allows to derive individual rib labels by simple sorting and counting the detected centerlines. We applied our method to CT volumes with an isotropic voxel spacing of 1.5 mm from 113 patients which included a variety of different challenges and achieved a mean centerline accuracy of 0.723 mm with respect to manual centerline annotations. The presented approach can be applied to similar tracing problems, such as detecting the spinal column centerline.},
+  isbn = {978-3-030-11166-3},
+  langid = {english},
+  keywords = {Centerline tracing,Deep learning,Fully convolutional neural networks,Rib segmentation,Trauma,Whole-body CT scans},
+  file = {/Users/kylebeggs/Zotero/storage/Z9P6K7SP/Lenga et al. - 2019 - Deep Learning Based Rib Centerline Extraction and .pdf}
+}
+
+@article{morrisonAdvancingRegulatoryScience2018,
+  title = {Advancing {{Regulatory Science With Computational Modeling}} for {{Medical Devices}} at the {{FDA}}'s {{Office}} of {{Science}} and {{Engineering Laboratories}}},
+  author = {Morrison, Tina M. and Pathmanathan, Pras and Adwan, Mariam and Margerrison, Edward},
+  year = {2018},
+  month = sep,
+  journal = {Frontiers in Medicine},
+  volume = {5},
+  pages = {241},
+  issn = {2296-858X},
+  doi = {10.3389/fmed.2018.00241},
+  abstract = {Protecting and promoting public health is the mission of the U.S. Food and Drug Administration (FDA). FDA's Center for Devices and Radiological Health (CDRH), which regulates medical devices marketed in the U.S., envisions itself as the world's leader in medical device innovation and regulatory science\textendash the development of new methods, standards, and approaches to assess the safety, efficacy, quality, and performance of medical devices. Traditionally, bench testing, animal studies, and clinical trials have been the main sources of evidence for getting medical devices on the market in the U.S. In recent years, however, computational modeling has become an increasingly powerful tool for evaluating medical devices, complementing bench, animal and clinical methods. Moreover, computational modeling methods are increasingly being used within software platforms, serving as clinical decision support tools, and are being embedded in medical devices. Because of its reach and huge potential, computational modeling has been identified as a priority by CDRH, and indeed by FDA's leadership. Therefore, the Office of Science and Engineering Laboratories (OSEL)\textemdash the research arm of CDRH\textemdash has committed significant resources to transforming computational modeling from a valuable scientific tool to a valuable regulatory tool, and developing mechanisms to rely more on digital evidence in place of other evidence. This article introduces the role of computational modeling for medical devices, describes OSEL's ongoing research, and overviews how evidence from computational modeling (i.e., digital evidence) has been used in regulatory submissions by industry to CDRH in recent years. It concludes by discussing the potential future role for computational modeling and digital evidence in medical devices.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/VNAGCFIH/Morrison et al. - 2018 - Advancing Regulatory Science With Computational Mo.pdf}
+}
+
+@inproceedings{mostafaImprovedCenterlineExtraction2021,
+  title = {Improved {{Centerline Extraction}} in {{Fully Automated Coronary Ostium Localization}} and {{Centerline Extraction Framework}} Using {{Deep Learning}}},
+  booktitle = {2021 43rd {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine Biology Society}} ({{EMBC}})},
+  author = {Mostafa, Abdelrahman and Ghanem, Ahmed M. and {El-Shatoury}, Mohamed and Basha, Tamer},
+  year = {2021},
+  month = nov,
+  pages = {3846--3849},
+  issn = {2694-0604},
+  doi = {10.1109/EMBC46164.2021.9629655},
+  abstract = {Coronary artery extraction in cardiac CT angiography (CCTA) image volume is a necessary step for any quantitative assessment of stenoses and atherosclerotic plaque. In this work, we propose a fully automated workflow that depends on convolutional networks to extract the centerlines of the coronary arteries from CCTA image volumes, starting from identifying the ostium points and then tracking the vessel till its end based on its radius and direction. First, a regression U-Net is employed to identify the ostium points in the image volume, then these points are fed to an orientation and radius predictor CNN model to track and extract each artery till its end point. Our results show that an average of 96\% of the ostium points were identified and located within less than 5mm from their true location. The coronary arteries centerlines extraction was performed with high accuracy and lower number of training parameters making it suitable for real clinical applications and continuous learning.},
+  keywords = {angiography,Biology,CCTA,centerline extraction,Computed tomography,convolutional neural networks,coronary artery disease,deep learning,Deep learning,Location awareness,ostium points,Predictive models,Solid modeling,Training,vesselness},
+  file = {/Users/kylebeggs/Zotero/storage/ADK89WI3/Mostafa et al. - 2021 - Improved Centerline Extraction in Fully Automated .pdf;/Users/kylebeggs/Zotero/storage/XNV2S47S/9629655.html}
+}
+
+@article{pfallerAutomatedGeneration0D2021,
+  title = {Automated Generation of {{0D}} and {{1D}} Reduced-Order Models of Patient-Specific Blood Flow},
+  author = {Pfaller, Martin R. and Pham, Jonathan and Verma, Aekaansh and Wilson, Nathan M. and Parker, David W. and Yang, Weiguang and Marsden, Alison L.},
+  year = {2021},
+  month = nov,
+  abstract = {Three-dimensional (3D) cardiovascular fluid dynamics simulations typically require hours to days of computing time on a high-performance computer. One-dimensional (1D) and lumped-parameter zero-dimensional (0D) models show great promise for accurately predicting blood flow and pressure with only a fraction of the cost. They can accelerate uncertainty quantification, optimization, and design parameterization studies. Previously, these models needed to be created laboriously by hand, and this limited assessment of their approximation accuracy to very few models in prior studies. This work proposes a fully automated and openly available framework to generate and simulate 0D and 1D models from 3D patient-specific geometries. Our only input is the 3D geometry; we do not use any prior knowledge from 3D simulations. All computational tools presented in this work are implemented in the open-source software platform SimVascular. We demonstrate the reduced-order approximation quality against full 3D solutions in a comprehensive comparison with N=73 publicly available models from various anatomies, vessel types, and disease conditions. Relative average approximation errors of flows and pressures typically ranged from 1\% to 10\% for both 0D and 1D models, at the caps and inside the vessel branches. Though they have minimally higher approximation errors than 1D, we recommend using 0D models due to their robustness and computational efficiency. Automatically generated reduced-order models can significantly speed up model development and shift the computational load from high-performance to personal computers.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/RRQZEQGF/Pfaller et al. - 2021 - Automated generation of 0D and 1D reduced-order mo.pdf;/Users/kylebeggs/Zotero/storage/S6CCJZQ2/2111.html}
+}
+
+@article{springenbergStrivingSimplicityAll2015,
+  title = {Striving for {{Simplicity}}: {{The All Convolutional Net}}},
+  shorttitle = {Striving for {{Simplicity}}},
+  author = {Springenberg, Jost Tobias and Dosovitskiy, Alexey and Brox, Thomas and Riedmiller, Martin},
+  year = {2015},
+  month = apr,
+  journal = {arXiv:1412.6806 [cs]},
+  eprint = {1412.6806},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  abstract = {Most modern convolutional neural networks (CNNs) used for object recognition are built using the same principles: Alternating convolution and max-pooling layers followed by a small number of fully connected layers. We re-evaluate the state of the art for object recognition from small images with convolutional networks, questioning the necessity of different components in the pipeline. We find that max-pooling can simply be replaced by a convolutional layer with increased stride without loss in accuracy on several image recognition benchmarks. Following this finding -- and building on other recent work for finding simple network structures -- we propose a new architecture that consists solely of convolutional layers and yields competitive or state of the art performance on several object recognition datasets (CIFAR-10, CIFAR-100, ImageNet). To analyze the network we introduce a new variant of the "deconvolution approach" for visualizing features learned by CNNs, which can be applied to a broader range of network structures than existing approaches.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  file = {/Users/kylebeggs/Zotero/storage/YBZPE7JZ/Springenberg et al. - 2015 - Striving for Simplicity The All Convolutional Net.pdf;/Users/kylebeggs/Zotero/storage/2SDYP2KQ/1412.html}
+}
+
+@article{tettehDeepVesselNetVesselSegmentation2020,
+  title = {{{DeepVesselNet}}: {{Vessel Segmentation}}, {{Centerline Prediction}}, and {{Bifurcation Detection}} in 3-{{D Angiographic Volumes}}},
+  shorttitle = {{{DeepVesselNet}}},
+  author = {Tetteh, Giles and Efremov, Velizar and Forkert, Nils D. and Schneider, Matthias and Kirschke, Jan and Weber, Bruno and Zimmer, Claus and Piraud, Marie and Menze, Bj{\"o}rn H.},
+  year = {2020},
+  journal = {Frontiers in Neuroscience},
+  volume = {14},
+  pages = {592352},
+  issn = {1662-4548},
+  doi = {10.3389/fnins.2020.592352},
+  abstract = {We present DeepVesselNet, an architecture tailored to the challenges faced when extracting vessel trees and networks and corresponding features in 3-D angiographic volumes using deep learning. We discuss the problems of low execution speed and high memory requirements associated with full 3-D networks, high-class imbalance arising from the low percentage ({$<$}3\%) of vessel voxels, and unavailability of accurately annotated 3-D training data-and offer solutions as the building blocks of DeepVesselNet. First, we formulate 2-D orthogonal cross-hair filters which make use of 3-D context information at a reduced computational burden. Second, we introduce a class balancing cross-entropy loss function with false-positive rate correction to handle the high-class imbalance and high false positive rate problems associated with existing loss functions. Finally, we generate a synthetic dataset using a computational angiogenesis model capable of simulating vascular tree growth under physiological constraints on local network structure and topology and use these data for transfer learning. We demonstrate the performance on a range of angiographic volumes at different spatial scales including clinical MRA data of the human brain, as well as CTA microscopy scans of the rat brain. Our results show that cross-hair filters achieve over 23\% improvement in speed, lower memory footprint, lower network complexity which prevents overfitting and comparable accuracy that does not differ from full 3-D filters. Our class balancing metric is crucial for training the network, and transfer learning with synthetic data is an efficient, robust, and very generalizable approach leading to a network that excels in a variety of angiography segmentation tasks. We observe that sub-sampling and max pooling layers may lead to a drop in performance in tasks that involve voxel-sized structures. To this end, the DeepVesselNet architecture does not use any form of sub-sampling layer and works well for vessel segmentation, centerline prediction, and bifurcation detection. We make our synthetic training data publicly available, fostering future research, and serving as one of the first public datasets for brain vessel tree segmentation and analysis.},
+  langid = {english},
+  pmcid = {PMC7753013},
+  pmid = {33363452},
+  keywords = {bifurcation,centerline,class balancing,cross-hair filters,deepvesselnet,vascular network,vascular tree,vessel segmentation},
+  file = {/Users/kylebeggs/Zotero/storage/SN2LAPCB/Tetteh et al. - 2020 - DeepVesselNet Vessel Segmentation, Centerline Pre.pdf}
+}
+
+@inproceedings{wangTubularStructureSegmentation2019,
+  title = {Tubular {{Structure Segmentation Using Spatial Fully Connected Network}} with {{Radial Distance Loss}} for {{3D Medical Images}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} \textendash{} {{MICCAI}} 2019},
+  author = {Wang, Chenglong and Hayashi, Yuichiro and Oda, Masahiro and Itoh, Hayato and Kitasaka, Takayuki and Frangi, Alejandro F. and Mori, Kensaku},
+  editor = {Shen, Dinggang and Liu, Tianming and Peters, Terry M. and Staib, Lawrence H. and Essert, Caroline and Zhou, Sean and Yap, Pew-Thian and Khan, Ali},
+  year = {2019},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {348--356},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-32226-7_39},
+  abstract = {This paper presents a new spatial fully connected tubular network for 3D tubular-structure segmentation. Automatic and complete segmentation of intricate tubular structures remains an unsolved challenge in the medical image analysis. Airways and vasculature pose high demands on medical image analysis as they are elongated fine structures with calibers ranging from several tens of voxels to voxel-level resolution, branching in deeply multi-scale fashion, and with complex topological and spatial relationships. Most machine/deep learning approaches are based on intensity features and ignore spatial consistency across the network that are otherwise distinct in tubular structures. In this work, we introduce 3D slice-by-slice convolutional layers in a U-Net architecture to capture the spatial information of elongated structures. Furthermore, we present a novel loss function, coined radial distance loss, specifically designed for tubular structures. The commonly used methods of cross-entropy loss and generalized Dice loss are sensitive to volumetric variation. However, in tiny tubular structure segmentation, topological errors are as important as volumetric errors. The proposed radial distance loss places higher weight to the centerline, and this weight decreases along the radial direction. Radial distance loss can help networks focus more attention on tiny structures than on thicker tubular structures. We perform experiments on bronchus segmentation on 3D CT images. The experimental results show that compared to the baseline U-Net, our proposed network achieved improvement about 24\% and 30\% in Dice index and centerline over ratio.},
+  isbn = {978-3-030-32226-7},
+  langid = {english},
+  keywords = {Blood vessel,Bronchus,Radial distance loss,Spatial FCN,Tubular structure segmentation},
+  file = {/Users/kylebeggs/Zotero/storage/ATYPYL4H/Wang et al. - 2019 - Tubular Structure Segmentation Using Spatial Fully.pdf}
+}
+
+@article{wilsonVascularModelRepository2013,
+  title = {The {{Vascular Model Repository}}: {{A Public Resource}} of {{Medical Imaging Data}} and {{Blood Flow Simulation Results}}},
+  shorttitle = {The {{Vascular Model Repository}}},
+  author = {Wilson, Nathan M. and Ortiz, Ana K. and Johnson, Allison B.},
+  year = {2013},
+  month = dec,
+  journal = {Journal of Medical Devices},
+  volume = {7},
+  number = {4},
+  pages = {0409231},
+  issn = {1932-6181},
+  doi = {10.1115/1.4025983},
+  abstract = {Patient-specific blood flow simulations may provide insight into disease progression, treatment options, and medical device design that would be difficult or impossible to obtain experimentally. However, publicly available image data and computer models for researchers and device designers are extremely limited. The National Heart, Lung, and Blood Institute sponsored Open Source Medical Software Corporation (contract nos. HHSN268200800008C and HHSN268201100035C) and its university collaborators to build a repository (www.vascularmodel.org) including realistic, image-based anatomic models and related hemodynamic simulation results to address this unmet need.},
+  pmcid = {PMC4023857},
+  pmid = {24895523},
+  file = {/Users/kylebeggs/Zotero/storage/LFX2T3BQ/Wilson et al. - 2013 - The Vascular Model Repository A Public Resource o.pdf}
+}
+
+

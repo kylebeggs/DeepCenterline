@@ -1,0 +1,21 @@
+{
+	"grammarly.overrides": [
+		{
+			"files": [
+				"**/proposal/main.tex"
+			],
+			"config": {
+				"audience": "expert",
+				"dialect": "american",
+				"domain": "technical",
+				"emotions": [
+					"neutral"
+				],
+				"goals": [
+					"inform",
+					"describe"
+				]
+			}
+		}
+	]
+}

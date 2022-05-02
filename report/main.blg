@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: centerline_bifurcation.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in pfallerAutomatedGeneration0D2021
+Warning--empty booktitle in antigaCenterlineComputationGeometric2003
+Warning--empty journal in guoDeepCenterlineMultitaskFully2019
+
+Done.
+You've used 9 entries,
+            4087 wiz_defined-function locations,
+            882 strings with 10431 characters,
+and the built_in function-call counts, 6985 in all, are:
+= -- 519
+> -- 245
+< -- 34
++ -- 122
+- -- 53
+* -- 356
+:= -- 1008
+add.period$ -- 19
+call.type$ -- 9
+change.case$ -- 11
+chr.to.int$ -- 69
+cite$ -- 12
+duplicate$ -- 530
+empty$ -- 555
+format.name$ -- 63
+if$ -- 1615
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 109
+newline$ -- 50
+num.names$ -- 11
+pop$ -- 282
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 517
+stack$ -- 0
+substring$ -- 201
+swap$ -- 416
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 9
+warning$ -- 3
+while$ -- 25
+width$ -- 10
+write$ -- 104
+(There were 3 warnings)
